@@ -1,6 +1,8 @@
 # Elden Ring Fan Site
 
 ![Elden Ring](https://img.icons8.com/color/96/000000/fantasy.png)
+![Uploading Screenshot_3.png…]()
+
 
 ## 🌌 О проекте
 
