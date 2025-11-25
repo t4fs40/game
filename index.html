@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring Fan Site - Lands Between</title>
+    
+    <!-- Мета-теги для SEO и соцсетей -->
+    <meta name="description" content="Фанатский сайт по Elden Ring - лор, персонажи, оружие, карты и обновления">
+    <meta name="keywords" content="Elden Ring, игры, FromSoftware, лор, гайды, персонажи, оружие, карты">
+    <meta name="author" content="Elden Ring Fan Community">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Elden Ring Fan Site - Lands Between">
+    <meta property="og:description" content="Исследуйте мир Elden Ring: лор, персонажи, оружие, карты и обновления">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:url" content="https://ваш-сайт.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elden Ring Fan Site">
+    <meta name="twitter:description" content="Полный гид по миру Elden Ring">
+    <meta name="twitter:image" content="images/logo.jpg">
+    
+    <!-- PWA настройки -->
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Фавиконка -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+    
+    <!-- Стили и шрифты -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="images/logo.jpg" alt="Elden Ring Logo" class="logo">
+                <span class="brand-text">ELDEN RING</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="#updates" class="nav-link">Обновления</a></li>
+                <li class="nav-item"><a href="#lore" class="nav-link">Лор</a></li>
+                <li class="nav-item"><a href="#characters" class="nav-link">Персонажи</a></li>
+                <li class="nav-item"><a href="#weapons" class="nav-link">Оружие</a></li>
+                <li class="nav-item"><a href="#maps" class="nav-link">Карты</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Галерея</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">МЕЖДУЗЕМЬЕ</span>
+                <span class="title-sub">ЖДЁТ СВОЕГО ВЛАДЫКУ</span>
+            </h1>
+            <p class="hero-subtitle">Исследуйте тайны Элден Риг вместе с нами</p>
+            <button class="cta-button">Начать путешествие</button>
+        </div>
+        <div class="scroll-indicator">
+            <span>Прокрутите вниз</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates" class="section updates-section">
+        <div class="container">
+            <h2 class="section-title">Последние Обновления</h2>
+            <div class="updates-grid">
+                <div class="update-card major-update">
+                    <div class="update-badge">DLC</div>
+                    <div class="update-header">
+                        <h3>Shadow of the Erdtree</h3>
+                        <span class="update-date">Июнь 2024</span>
+                    </div>
+                    <div class="update-content">
+                        <img src="images/Shadow of the Erdtree.jpg" alt="Shadow of the Erdtree" class="update-image">
+                        <p>Крупнейшее дополнение с новым миром, боссами и оружием. Исследуйте Земли Теней.</p>
+                        <ul class="update-features">
+                            <li>✅ Новая карта больше Лиурнии</li>
+                            <li>✅ 10+ новых боссов</li>
+                            <li>✅ 100+ новых предметов</li>
+                            <li>✅ 8+ часов геймплея</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="update-card">
+                    <div class="update-badge">Патч 1.12</div>
+                    <div class="update-header">
+                        <h3>Баланс оружия</h3>
+                        <span class="update-date">Май 2024</span>
+                    </div>
+                    <div class="update-content">
+                        <p>Значительные изменения баланса и исправления багов:</p>
+                        <ul class="update-features">
+                            <li>⚖️ Увеличен урон копий</li>
+                            <li>⚖️ Нерф заклинаний кровавой потери</li>
+                            <li>🐛 Исправлены ошибки коллизии</li>
+                            <li>🎮 Улучшена работа сетевой игры</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="update-card">
+                    <div class="update-badge">Событие</div>
+                    <div class="update-header">
+                        <h3>Фестиваль Радана</h3>
+                        <span class="update-date">Активно</span>
+                    </div>
+                    <div class="update-content">
+                        <img src="images/radahn-festival.webp" alt="Фестиваль Радана" class="update-image">
+                        <p>Специальное событие с увеличенными наградами за победу над Раданом.</p>
+                        <div class="event-timer">
+                            <span class="timer-label">До конца события:</span>
+                            <div class="timer" id="event-timer">7д 12ч 45м</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="update-card">
+                    <div class="update-badge">Патч 1.11</div>
+                    <div class="update-header">
+                        <h3>Исправления PvP</h3>
+                        <span class="update-date">Апрель 2024</span>
+                    </div>
+                    <div class="update-content">
+                        <p>Баланс для многопользовательской игры:</p>
+                        <ul class="update-features">
+                            <li>⚔️ Снижена эффективность Rivers of Blood</li>
+                            <li>🛡️ Увеличен урон по блокам щитов</li>
+                            <li>🔮 Скорректирована магия в PvP</li>
+                            <li>🌐 Улучшена стабильность подключения</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="update-archive">
+                <h3 class="archive-title">Архив обновлений</h3>
+                <div class="archive-list">
+                    <div class="archive-item">
+                        <span class="archive-version">v1.10</span>
+                        <span class="archive-desc">Новые жесты и исправления</span>
+                        <span class="archive-date">Мар 2024</span>
+                    </div>
+                    <div class="archive-item">
+                        <span class="archive-version">v1.09</span>
+                        <span class="archive-desc">Баланс заклинаний</span>
+                        <span class="archive-date">Фев 2024</span>
+                    </div>
+                    <div class="archive-item">
+                        <span class="archive-version">v1.08</span>
+                        <span class="archive-desc">Оптимизация производительности</span>
+                        <span class="archive-date">Янв 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lore Section -->
+    <section id="lore" class="section lore-section">
+        <div class="container">
+            <h2 class="section-title">Хроники Междуземья</h2>
+            <div class="lore-grid">
+                <div class="lore-card">
+                    <img src="images/great-will.avif" alt="Великая Воля" class="lore-image">
+                    <h3>Великая Воля</h3>
+                    <p>Изучите историю создания Элден Риг и божественных сил, управляющих миром.</p>
+                    <button class="card-button" data-modal="great-will">Узнать больше</button>
+                </div>
+                <div class="lore-card">
+                    <img src="images/shattering-war.jpg" alt="Война Сокрушения" class="lore-image">
+                    <h3>Война Сокрушения</h3>
+                    <p>Хроники великой битвы, расколовшей мир и приведшей к падению богов.</p>
+                    <button class="card-button" data-modal="shattering-war">Узнать больше</button>
+                </div>
+                <div class="lore-card">
+                    <img src="images/demigods.jpg" alt="Владыки Полукровки" class="lore-image">
+                    <h3>Владыки Полукровки</h3>
+                    <p>Судьбы детей Марики и Радагона, держащих Великие Руны.</p>
+                    <button class="card-button" data-modal="demigods">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters" class="section characters-section">
+        <div class="container">
+            <h2 class="section-title">Легендарные персонажи</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/melina.jpg" alt="Мелина">
+                    </div>
+                    <h3>Мелина</h3>
+                    <p>Таинственная спутница, предлагающая помощь</p>
+                    <button class="card-button" data-modal="melina">Узнать больше</button>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/godrick.jpg" alt="Годрик Отрекшийся">
+                    </div>
+                    <h3>Годрик Отрекшийся</h3>
+                    <p>Владыка Полукровка замка Штормвейл</p>
+                    <button class="card-button" data-modal="godrick">Узнать больше</button>
+                </div>
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/radahn.jpg" alt="Радан">
+                    </div>
+                    <h3>Радан</h3>
+                    <p>Звездная Ярость, величайший воин</p>
+                    <button class="card-button" data-modal="radahn">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapons Section -->
+    <section id="weapons" class="section weapons-section">
+        <div class="container">
+            <h2 class="section-title">Легендарное оружие</h2>
+            <div class="weapons-tabs">
+                <button class="tab-button active" data-tab="swords">Мечи</button>
+                <button class="tab-button" data-tab="spells">Заклинания</button>
+                <button class="tab-button" data-tab="shields">Щиты</button>
+            </div>
+            <div class="tab-content active" id="swords">
+                <div class="weapon-item">
+                    <img src="images/bloody-spear.png" alt="Кровавое Копье Могилы" class="weapon-icon">
+                    <div class="weapon-info">
+                        <h4>Кровавое Копье Могилы</h4>
+                        <p>Древнее копье, насылающее кровотечение на врагов</p>
+                        <button class="card-button small" data-modal="bloody-spear">Узнать больше</button>
+                    </div>
+                </div>
+                <div class="weapon-item">
+                    <img src="images/lightning-swor.png" alt="Лунный Клинок" class="weapon-icon">
+                    <div class="weapon-info">
+                        <h4>Лунный Клинок</h4>
+                        <p>Магический катана, испускающий лунные волны</p>
+                        <button class="card-button small" data-modal="moonveil">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="spells">
+                <div class="weapon-item">
+                    <img src="images/comet-azur.jpg" alt="Комета Азура" class="weapon-icon">
+                    <div class="weapon-info">
+                        <h4>Комета Азура</h4>
+                        <p>Легендарное заклинание, испускающее мощный луч магии</p>
+                        <button class="card-button small" data-modal="comet-azur">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="shields">
+                <div class="weapon-item">
+                    <img src="images/erdtree-shield.webp" alt="Щит Эрдтри" class="weapon-icon">
+                    <div class="weapon-info">
+                        <h4>Щит Эрдтри</h4>
+                        <p>Легендарный щит с высоким сопротивлением</p>
+                        <button class="card-button small" data-modal="erdtree-shield">Узнать больше</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <section id="maps" class="section maps-section">
+        <div class="container">
+            <h2 class="section-title">Карты Междуземья</h2>
+            
+            <div class="maps-container">
+                <!-- Навигация по картам -->
+                <div class="maps-nav">
+                    <button class="map-nav-btn active" data-map="overworld">Общая карта</button>
+                    <button class="map-nav-btn" data-map="limgrave">Лимгрейв</button>
+                    <button class="map-nav-btn" data-map="liurnia">Лиурния</button>
+                    <button class="map-nav-btn" data-map="caelid">Кеилид</button>
+                    <button class="map-nav-btn" data-map="altus">Плато Альтус</button>
+                </div>
+
+                <!-- Контейнер для карты -->
+                <div class="map-container">
+                    <div class="map-image active" id="map-overworld">
+                        <img src="images/map-overworld.jpg" alt="Общая карта Междуземья" class="interactive-map">
+                        <div class="map-marker" style="top: 76%; left: 33%;" data-location="stormveil">
+                            <div class="marker-dot"></div>
+                            <div class="marker-tooltip">
+                                <h4>Замок Штормвейл</h4>
+                                <p>Логово Годрика Отрекшегося</p>
+                            </div>
+                        </div>
+                        <div class="map-marker" style="top: 53%; left: 11%;" data-location="academy">
+                            <div class="marker-dot"></div>
+                            <div class="marker-tooltip">
+                                <h4>Академия Рая Лукарии</h4>
+                                <p>Обитель Ренналы</p>
+                            </div>
+                        </div>
+                        <div class="map-marker" style="top: 75%; left: 63%;" data-location="radahn">
+                            <div class="marker-dot"></div>
+                            <div class="marker-tooltip">
+                                <h4>Пустоши Целеиды</h4>
+                                <p>Место битвы с Раданом</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-image" id="map-limgrave">
+                        <img src="images/limgrave.jpg" alt="Карта Лимгрейва" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Лимгрейв</h3>
+                            <p>Первые земли, которые встречает Потусторонник. Здесь начинается ваше путешествие.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-image" id="map-liurnia">
+                        <img src="images/map-liurnia.webp" alt="Карта Лиурнии" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Лиурния</h3>
+                            <p>Земля озер и магии, где находится Академия Рая Лукарии.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-image" id="map-caelid">
+                        <img src="images/map-caelid.avif" alt="Карта Кеилида" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Кеилид</h3>
+                            <p>Проклятые земли, пораженные алой гнилью.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-image" id="map-altus">
+                        <img src="images/map-altus.webp" alt="Карта Плато Альтус" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Плато Альтус</h3>
+                            <p>Возвышенность, ведущая к Столице Лейнделл.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Легенда карты -->
+                <div class="map-legend">
+                    <h4>Легенда:</h4>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="legend-color boss"></span>
+                            <span>Боссы</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color dungeon"></span>
+                            <span>Подземелья</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color grace"></span>
+                            <span>Благодать</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color npc"></span>
+                            <span>Персонажи</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Быстрая навигация -->
+                <div class="quick-nav">
+                    <h4>Быстрый доступ:</h4>
+                    <div class="quick-nav-grid">
+                        <button class="quick-nav-btn" data-location="stormveil">
+                            <span>🏰</span>
+                            Замок Штормвейл
+                        </button>
+                        <button class="quick-nav-btn" data-location="academy">
+                            <span>🏛️</span>
+                            Академия
+                        </button>
+                        <button class="quick-nav-btn" data-location="radahn">
+                            <span>⚔️</span>
+                            Битва с Раданом
+                        </button>
+                        <button class="quick-nav-btn" data-location="capital">
+                            <span>👑</span>
+                            Лейнделл
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title">Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/landscape.jpg" alt="Пейзаж Lands Between">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/castle.jpg" alt="Замок Штормвейл">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/erdtree.jpg" alt="Эрдтри">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dungeon.jpg" alt="Подземелье">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Elden Ring Fan Site. This is a fan project. Elden Ring is a trademark of FromSoftware and Bandai Namco.</p>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- Контент будет подгружаться динамически -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
