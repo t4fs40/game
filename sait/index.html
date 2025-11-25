@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elden Ring Fan Site - Lands Between</title>
+    
+    <!-- Мета-теги для SEO и соцсетей -->
+    <meta name="description" content="Фанатский сайт по Elden Ring - лор, персонажи, оружие, карты и обновления">
+    <meta name="keywords" content="Elden Ring, игры, FromSoftware, лор, гайды, персонажи, оружие, карты">
+    <meta name="author" content="Elden Ring Fan Community">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Elden Ring Fan Site - Lands Between">
+    <meta property="og:description" content="Исследуйте мир Elden Ring: лор, персонажи, оружие, карты и обновления">
+    <meta property="og:image" content="images/logo.jpg">
+    <meta property="og:url" content="https://ваш-сайт.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Elden Ring Fan Site">
+    <meta name="twitter:description" content="Полный гид по миру Elden Ring">
+    <meta name="twitter:image" content="images/logo.jpg">
+    
+    <!-- PWA настройки -->
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Фавиконка -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    <link rel="apple-touch-icon" href="images/logo.jpg">
+    
+    <!-- Стили и шрифты -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel&display=swap" rel="stylesheet">
 </head>
@@ -256,128 +286,128 @@
     </section>
 
     <!-- Maps Section -->
-<section id="maps" class="section maps-section">
-    <div class="container">
-        <h2 class="section-title">Карты Междуземья</h2>
-        
-        <div class="maps-container">
-            <!-- Навигация по картам -->
-            <div class="maps-nav">
-                <button class="map-nav-btn active" data-map="overworld">Общая карта</button>
-                <button class="map-nav-btn" data-map="limgrave">Лимгрейв</button>
-                <button class="map-nav-btn" data-map="liurnia">Лиурния</button>
-                <button class="map-nav-btn" data-map="caelid">Кеилид</button>
-                <button class="map-nav-btn" data-map="altus">Плато Альтус</button>
-            </div>
+    <section id="maps" class="section maps-section">
+        <div class="container">
+            <h2 class="section-title">Карты Междуземья</h2>
+            
+            <div class="maps-container">
+                <!-- Навигация по картам -->
+                <div class="maps-nav">
+                    <button class="map-nav-btn active" data-map="overworld">Общая карта</button>
+                    <button class="map-nav-btn" data-map="limgrave">Лимгрейв</button>
+                    <button class="map-nav-btn" data-map="liurnia">Лиурния</button>
+                    <button class="map-nav-btn" data-map="caelid">Кеилид</button>
+                    <button class="map-nav-btn" data-map="altus">Плато Альтус</button>
+                </div>
 
-            <!-- Контейнер для карты -->
-            <div class="map-container">
-                <div class="map-image active" id="map-overworld">
-                    <img src="images/map-overworld.jpg" alt="Общая карта Междуземья" class="interactive-map">
-                    <div class="map-marker" style="top: 76%; left: 33%;" data-location="stormveil">
-                        <div class="marker-dot"></div>
-                        <div class="marker-tooltip">
-                            <h4>Замок Штормвейл</h4>
-                            <p>Логово Годрика Отрекшегося</p>
+                <!-- Контейнер для карты -->
+                <div class="map-container">
+                    <div class="map-image active" id="map-overworld">
+                        <img src="images/map-overworld.jpg" alt="Общая карта Междуземья" class="interactive-map">
+                        <div class="map-marker" style="top: 76%; left: 33%;" data-location="stormveil">
+                            <div class="marker-dot"></div>
+                            <div class="marker-tooltip">
+                                <h4>Замок Штормвейл</h4>
+                                <p>Логово Годрика Отрекшегося</p>
+                            </div>
+                        </div>
+                        <div class="map-marker" style="top: 53%; left: 11%;" data-location="academy">
+                            <div class="marker-dot"></div>
+                            <div class="marker-tooltip">
+                                <h4>Академия Рая Лукарии</h4>
+                                <p>Обитель Ренналы</p>
+                            </div>
+                        </div>
+                        <div class="map-marker" style="top: 75%; left: 63%;" data-location="radahn">
+                            <div class="marker-dot"></div>
+                            <div class="marker-tooltip">
+                                <h4>Пустоши Целеиды</h4>
+                                <p>Место битвы с Раданом</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="map-marker" style="top: 53%; left: 11%;" data-location="academy">
-                        <div class="marker-dot"></div>
-                        <div class="marker-tooltip">
-                            <h4>Академия Рая Лукарии</h4>
-                            <p>Обитель Ренналы</p>
+
+                    <div class="map-image" id="map-limgrave">
+                        <img src="images/limgrave.jpg" alt="Карта Лимгрейва" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Лимгрейв</h3>
+                            <p>Первые земли, которые встречает Потусторонник. Здесь начинается ваше путешествие.</p>
                         </div>
                     </div>
-                    <div class="map-marker" style="top: 75%; left: 63%;" data-location="radahn">
-                        <div class="marker-dot"></div>
-                        <div class="marker-tooltip">
-                            <h4>Пустоши Целеиды</h4>
-                            <p>Место битвы с Раданом</p>
+
+                    <div class="map-image" id="map-liurnia">
+                        <img src="images/map-liurnia.webp" alt="Карта Лиурнии" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Лиурния</h3>
+                            <p>Земля озер и магии, где находится Академия Рая Лукарии.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-image" id="map-caelid">
+                        <img src="images/map-caelid.avif" alt="Карта Кеилида" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Кеилид</h3>
+                            <p>Проклятые земли, пораженные алой гнилью.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-image" id="map-altus">
+                        <img src="images/map-altus.webp" alt="Карта Плато Альтус" class="interactive-map">
+                        <div class="map-info">
+                            <h3>Плато Альтус</h3>
+                            <p>Возвышенность, ведущая к Столице Лейнделл.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="map-image" id="map-limgrave">
-                    <img src="images/limgrave.jpg" alt="Карта Лимгрейва" class="interactive-map">
-                    <div class="map-info">
-                        <h3>Лимгрейв</h3>
-                        <p>Первые земли, которые встречает Потусторонник. Здесь начинается ваше путешествие.</p>
+                <!-- Легенда карты -->
+                <div class="map-legend">
+                    <h4>Легенда:</h4>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="legend-color boss"></span>
+                            <span>Боссы</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color dungeon"></span>
+                            <span>Подземелья</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color grace"></span>
+                            <span>Благодать</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color npc"></span>
+                            <span>Персонажи</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="map-image" id="map-liurnia">
-                    <img src="images/map-liurnia.webp" alt="Карта Лиурнии" class="interactive-map">
-                    <div class="map-info">
-                        <h3>Лиурния</h3>
-                        <p>Земля озер и магии, где находится Академия Рая Лукарии.</p>
+                <!-- Быстрая навигация -->
+                <div class="quick-nav">
+                    <h4>Быстрый доступ:</h4>
+                    <div class="quick-nav-grid">
+                        <button class="quick-nav-btn" data-location="stormveil">
+                            <span>🏰</span>
+                            Замок Штормвейл
+                        </button>
+                        <button class="quick-nav-btn" data-location="academy">
+                            <span>🏛️</span>
+                            Академия
+                        </button>
+                        <button class="quick-nav-btn" data-location="radahn">
+                            <span>⚔️</span>
+                            Битва с Раданом
+                        </button>
+                        <button class="quick-nav-btn" data-location="capital">
+                            <span>👑</span>
+                            Лейнделл
+                        </button>
                     </div>
-                </div>
-
-                <div class="map-image" id="map-caelid">
-                    <img src="images/map-caelid.avif" alt="Карта Кеилида" class="interactive-map">
-                    <div class="map-info">
-                        <h3>Кеилид</h3>
-                        <p>Проклятые земли, пораженные алой гнилью.</p>
-                    </div>
-                </div>
-
-                <div class="map-image" id="map-altus">
-                    <img src="images/map-altus.webp" alt="Карта Плато Альтус" class="interactive-map">
-                    <div class="map-info">
-                        <h3>Плато Альтус</h3>
-                        <p>Возвышенность, ведущая к Столице Лейнделл.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Легенда карты -->
-            <div class="map-legend">
-                <h4>Легенда:</h4>
-                <div class="legend-items">
-                    <div class="legend-item">
-                        <span class="legend-color boss"></span>
-                        <span>Боссы</span>
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-color dungeon"></span>
-                        <span>Подземелья</span>
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-color grace"></span>
-                        <span>Благодать</span>
-                    </div>
-                    <div class="legend-item">
-                        <span class="legend-color npc"></span>
-                        <span>Персонажи</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Быстрая навигация -->
-            <div class="quick-nav">
-                <h4>Быстрый доступ:</h4>
-                <div class="quick-nav-grid">
-                    <button class="quick-nav-btn" data-location="stormveil">
-                        <span>🏰</span>
-                        Замок Штормвейл
-                    </button>
-                    <button class="quick-nav-btn" data-location="academy">
-                        <span>🏛️</span>
-                        Академия
-                    </button>
-                    <button class="quick-nav-btn" data-location="radahn">
-                        <span>⚔️</span>
-                        Битва с Раданом
-                    </button>
-                    <button class="quick-nav-btn" data-location="capital">
-                        <span>👑</span>
-                        Лейнделл
-                    </button>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="section gallery-section">
