@@ -1,7 +1,7 @@
 # Elden Ring Fan Site
 
 ![Elden Ring](https://img.icons8.com/color/96/000000/fantasy.png)
-![Uploading Screenshot_3.png…]()
+file:///C:/Users/t4fs/Desktop/sait/scrins/Screenshot_3.png
 
 
 ## 🌌 О проекте
