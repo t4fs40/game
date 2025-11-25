@@ -28,7 +28,7 @@
 | Netlify | Хостинг и деплой |
 
 ## 🚀 Установка и запуск
-```bash
+**```bash
 # Клонировать репозиторий
 git clone https://github.com/t4fs40/elden-ring-fan-site.git
 
@@ -42,5 +42,7 @@ npm install
 npm run dev
 
 # Открыть в браузере
-open index.html
+open index.html  ***
+
+
 
