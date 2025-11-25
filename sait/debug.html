@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Диагностика картинок</title>
+    <style>
+        body { background: black; color: white; font-family: Arial; padding: 20px; }
+        .test-box { border: 2px solid yellow; padding: 10px; margin: 10px; }
+        img { max-width: 200px; border: 2px solid red; display: block; margin: 10px 0; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>🔧 Диагностика загрузки картинок</h1>
+
+    <div class="test-box">
+        <h2>Тест 1: Мелина</h2>
+        <img src="./melina.jpg" alt="Мелина" onerror="this.nextElementSibling.innerHTML='❌ Файл НЕ найден: ./melina.jpg'" onload="this.nextElementSibling.innerHTML='✅ Файл загружен: ./melina.jpg'">
+        <div class="status"></div>
+    </div>
+
+    <div class="test-box">
+        <h2>Тест 2: Лого</h2>
+        <img src="./maxresdefault (2).jpg" alt="Лого" onerror="this.nextElementSibling.innerHTML='❌ Файл НЕ найден: ./maxresdefault (2).jpg'" onload="this.nextElementSibling.innerHTML='✅ Файл загружен: ./maxresdefault (2).jpg'">
+        <div class="status"></div>
+    </div>
+
+    <div class="test-box">
+        <h2>Тест 3: Без точки</h2>
+        <img src="melina.jpg" alt="Мелина" onerror="this.nextElementSibling.innerHTML='❌ Файл НЕ найден: melina.jpg'" onload="this.nextElementSibling.innerHTML='✅ Файл загружен: melina.jpg'">
+        <div class="status"></div>
+    </div>
+
+    <script>
+        console.log('=== ДИАГНОСТИКА КАРТИНОК ===');
+        
+        // Проверяем все картинки
+        const testImages = [
+            './melina.jpg',
+            'melina.jpg',
+            './maxresdefault (2).jpg',
+            './godrik.jpg',
+            './radan.jpg',
+            './Elden-Ring-Final-Boss-How-To-Cheese-The-Elden-Beast-Guide.avif'
+        ];
+
+        testImages.forEach(src => {
+            const img = new Image();
+            img.onload = () => console.log('✅ Найдено:', src);
+            img.onerror = () => console.log('❌ Не найдено:', src);
+            img.src = src;
+        });
+    </script>
+</body>
+</html>
