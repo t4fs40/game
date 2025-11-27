@@ -81,7 +81,7 @@ https://images/landscape.jpg
 - Чистый JavaScript код
 ```
 ## 👨‍💻 Автор проекта
-Разработчик: t4fs40
+Разработчик: t4fs40 Арапов Никита ВБИО-405рсоб
 GitHub: https://github.com/t4fs40
 Вдохновение: FromSoftware, Джордж Р. Р. Мартин, сообщество Elden Ring
 
