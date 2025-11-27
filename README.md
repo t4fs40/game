@@ -33,7 +33,7 @@
 git clone https://github.com/t4fs40/elden-ring-fan-site.git
 
 # Перейти в директорию проекта
-cd sait
+cd elden-ring-fan-site
 
 # Установить зависимости
 npm install
